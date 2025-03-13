@@ -1,16 +1,11 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Beat : MonoBehaviour
+[Serializable]
+[CreateAssetMenu(fileName = "Beat", menuName = "ScriptableObjects/Beat", order = 1)]
+public class Beat : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public List<Sprite> beatSprite;
+    public float TimeToHitOnTime;
 }
